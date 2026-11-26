@@ -18,7 +18,7 @@ network:
     - awesome-copilot.github.com
 tools:
   edit:
-  bash: ["curl"]
+  bash: ["curl", "mkdir", "cd", "echo", "cat", "head", "tail", "grep", "sed", "cut", "md5sum", "ls", "wc"]
 safe-outputs:
   create-pull-request:
     max: 1
