@@ -1,7 +1,7 @@
 ---
 name: update-github-info
 description: Refresh the GitHub Info site with concise, practical updates from official GitHub Blog, Changelog, and Awesome Copilot workflows sources.
-model: gpt-6-luna
+model: gpt-5-mini
 on:
   schedule: daily
   workflow_dispatch:
