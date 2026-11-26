@@ -9,6 +9,7 @@ permissions:
 engine:
   id: copilot
   copilot-sdk: true
+  args: ["--allow-url", "github.blog", "--allow-url", "awesome-copilot.github.com"]
 network:
   allowed:
     - defaults
@@ -17,7 +18,7 @@ network:
     - awesome-copilot.github.com
 tools:
   edit:
-  web-fetch:
+  bash: ["curl"]
 safe-outputs:
   create-pull-request:
     max: 1
@@ -31,7 +32,7 @@ safe-outputs:
 
 Read `notes/mona-notes.md` and `site/content/github-info.md` before making any changes. Follow Mona's editorial guidance and preserve the existing site's focus and structure.
 
-Use the web-fetch tool to fetch all three sources:
+Use bash with `curl --fail --location <url>` to fetch all three sources:
 - https://github.blog/latest/
 - https://github.blog/changelog/
 - https://awesome-copilot.github.com/workflows/
